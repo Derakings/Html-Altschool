@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="header-section">
+        <a href="../html-1/media.html">Media Page</a>
+        <a href="/html-1/table.html">Table content</a>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#picture">picture</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#audio">audio</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#video">video</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#iframe">iframe</a>
+          </li>
+          <li class="breadcrumb-item.active" aria-current="page">
+            <a href="#source">source</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Information About Me</h1>
+      <p>
+        Hello! My name is Ojimba Chidera Kingsley, and I’m a Nigerian by
+        nationality. I’m currently a 300-level student at the University of
+        Lagos, where I continue to build on my lifelong passion for technology.
+        Ever since my younger days, I’ve been fascinated by the world of tech,
+        dreaming of becoming a tech guru and making an impact in the field.
+      </p>
+
+      <p>
+        I’m actively pursuing my dream through Altschool, where I’m honing my
+        skills to become a cloud engineer. This journey represents my commitment
+        to mastering the art and science of technology while striving to be a
+        leader in this ever-evolving space.
+      </p>
+      <p>
+        When I’m not immersed in tech, I enjoy exploring creative ideas,
+        problem-solving, and envisioning how technology can change the world.
+        asides tech, I'm an advertising Pr personnel, a footballer and digital
+        markerter.
+      </p>
+
+      <!-- Picture element  -->
+      <article id="picture">
+        <section>
+          <h2><em>Picture element</em></h2>
+          <picture>
+            <source
+              srcset="./assets/pictures/dera3.jpg"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="./assets/pictures/dera1.jpg"
+              media="(min-width: 768px)"
+            />
+            <img src="./assets/pictures/dera2.jpg" alt="Responsive image" />
+          </picture>
+        </section>
+      </article>
+
+      <!-- audio element -->
+      <article id="audio">
+        <section>
+          <h2><em>Audio element</em></h2>
+          <audio controls src="assets/M1.mp3"></audio>
+        </section>
+      </article>
+
+      <!-- video element -->
+      <article id="video">
+        <section>
+          <h2><em>Video element</em></h2>
+          <video
+            controls
+            src="/html-1/assets/videos/VID_21200905_085425_898.mp4"
+          ></video>
+        </section>
+      </article>
+
+      <!-- iframe -->
+      <article id="iframe">
+        <section>
+          <h2><em>iframe element</em></h2>
+          <iframe
+            style="height: 400px; width: 600px"
+            src="https://www.youtube.com/embed/EdCIxHNVxz0?si=sjUT_oXhQpMCa6ZY "
+            title="Altschool html assignment"
+            frameborder="0"
+          >
+          </iframe>
+        </section>
+      </article>
+
+      <!-- source element -->
+      <article id="source">
+        <section>
+          <h2><em>source</em></h2>
+          <video controls>
+            <source src="/html-1/assets/videos/VID_22700703_021900_949.mp4" />
+          </video>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>&copy; Chidera Ojimba 2025. All rights reserved</p>
+      </div>
+      <a href="#top">Back to Top</a>
+    </footer>
+  </body>
+</html>

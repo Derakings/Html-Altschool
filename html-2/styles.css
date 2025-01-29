@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+/* body styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Header styles */
+.head {
+  background-color: #246b47;
+  padding: 1rem 2rem;
+  text-align: center; /* Center text */
+  position: relative; /* To allow wave effect */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Subtle shadow */
+  overflow: hidden;
+}
+
+.head section {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Heading style */
+.head h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .head section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .head h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+}
+.head hr {
+  margin: 1.5rem 0;
+  border: none;
+  border-top: 2px solid #ddd; /* Light gray horizontal rule */
+}
+
+/* Section styles */
+.bio {
+  max-width: 600px; /* Limit the width for better readability */
+  margin: 2rem auto; /* Center the section horizontally */
+  padding: 1.5rem;
+  border-radius: 8px; /* Rounded corners */
+  background: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: "Poppins", sans-serif;
+  text-align: center; /* Center align text */
+}
+.bio h2 {
+  font-size: 50px;
+}
+
+.bio p {
+  margin: 0.5rem 0; /* Add spacing between paragraphs */
+  font-size: 1rem;
+  color: #333; /* Dark grey text */
+}
+
+.bio a {
+  text-decoration: none;
+  color: #4caf50; /* Green links */
+  font-weight: 500;
+}
+.bio a:hover {
+  color: #2e8b57; /* Darker green on hover */
+  text-decoration: underline; /* Add underline effect */
+}
+
+.bio hr {
+  margin: 1.5rem 0;
+  border: none;
+  border-top: 2px solid #ddd; /* Light gray horizontal rule */
+}
+
+/* Contact links */
+.contact-info {
+  display: flex;
+  justify-content: center; /* Center align links */
+  flex-wrap: wrap; /* Wrap links on smaller screens */
+  gap: 1rem; /* Add spacing between items */
+  margin-top: 1rem;
+}
+
+.contact-info a {
+  color: #4caf50;
+  transition: transform 0.3s ease;
+}
+
+.contact-info a:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  color: #2e8b57;
+}
+
+/* Main container */
+main {
+  display: flex; /* Flexbox applied */
+  flex-direction: column; /* Arrange items vertically */
+  gap: 20px; /* Space between sections */
+  margin: 2rem auto; /* Center the main container */
+  max-width: 800px; /* Set a max width for better readability */
+  background: #fff; /* White background */
+  padding: 2rem;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* Section Headings */
+main h2 {
+  font-size: 1.8rem;
+  color: #2e8b57; /* Green headings */
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Paragraph styling */
+main p {
+  font-size: 1rem;
+  color: #555;
+  text-align: justify; /* Clean alignment */
+  margin-bottom: 1rem;
+}
+/* Horizontal Rule */
+main hr {
+  border: none;
+  border-top: 2px solid #ddd;
+  margin: 1rem 0;
+}
+/* Goals Section (List) */
+main nav ul {
+  list-style: inside; /* Remove default bullets */
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  gap: 10px; /* Spacing between list items */
+  padding-left: 1rem;
+}
+main nav ul li {
+  background: #f1f1f1; /* Light gray background */
+  padding: 0.8rem;
+  border-radius: 5px; /* Rounded corners */
+  border-left: 5px solid #2e8b57; /* Highlight */
+  font-size: 1rem;
+  color: #333;
+}
+main nav ul li:hover {
+  background: #e4f8ed; /* Light green on hover */
+}
+
+footer a {
+  color: #1e90ff; /* Light blue for links */
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #104e8b; /* Darker blue on hover */
+}
+
+/* Footer Text */
+footer p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+/* Accessibility Enhancements */
+footer nav a {
+  margin: 5px 0;
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+  footer {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
+  footer a {
+    margin: 5px 0;
+  }
+}
+
+nav a.active {
+  color: #2e8b57;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main nav ul li.highlight {
+  background-color: #cce7cc;
+  border-left: 5px solid #2e8b57;
+}
+
+/* forms */
+
+/* Header Styles */
+header {
+  background-color: #246b45; /* Green background */
+  color: #fff; /* White text */
+  text-align: center; /* Center align the content */
+  padding: 20px; 
+  font-family: "poppins", sans-serif;
+}
+
+header h1 {
+  font-size: 2rem; /* Large font size */
+  margin: 0; /* Remove default margin */
+  text-transform: uppercase; /* Make text uppercase */
+  letter-spacing: 2px; /* Add spacing between letters */
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+legend {
+  color: #246b47;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  text-shadow: #333;
+}
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: "poppins", sans-serif;
+  border: 1px solid #2e8b57;
+  border-radius: 8px;
+  background-color: #f9fdf9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #2e8b57; /* Green text */
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #2e8b57;
+  outline: none;
+  box-shadow: 0 0 5px rgba(46, 139, 87, 0.5); /* Green focus glow */
+}
+
+/* Placeholder Text */
+form input::placeholder {
+  color: #aaa;
+}
+
+/* Submit Button */
+form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e8b57;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #246b47;
+}
+
+/* Placeholder Option Style */
+form select option:disabled {
+  color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form select,
+  form select {
+    font-size: 0.9rem;
+  }
+}
+
+/* agreement */
+form p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #2e8b57; /* Green text */
+  margin-bottom: 20px;
+}
+
+form p a {
+  color: #1e90ff; /* Blue for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+form p a:hover {
+  text-decoration: underline;
+  color: #104e8b; /* Darker blue on hover */
+}
+/* submit */
+/* Submit Button */
+form .submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e8b57; /* Green background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form .submit-button:hover {
+  background-color: #246b45; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+form .submit-button:active {
+  background-color: #1a4d31; /* Even darker green when active */
+  transform: scale(0.98); /* Slight shrink on click */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form p {
+    font-size: 0.8rem;
+  }
+
+  form .submit-button {
+    font-size: 0.9rem;
+  }
+}
+
+footer {
+  background-color: #2e8b57; /* Green background */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 10px 10px;
+  font-family: "poppins", sans-serif;
+  border-top: 4px solid #246b45; /* Darker green border */
+}
+footer a {
+  color: #1e90ff; /* Light blue for links */
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #104e8b; /* Darker blue on hover */
+}
+
+/* Footer Text */
+footer p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+/* Accessibility Enhancements */
+footer nav a {
+  margin: 5px 0;
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+  footer {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
+  footer a {
+    margin: 5px 0;
+  }
+}
