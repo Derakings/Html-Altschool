@@ -1,0 +1,61 @@
+
+/* reference page */
+* {
+    color: #000;
+    font-family: Lato, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 30px;
+  }
+
+.body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+  }
+  
+  .locator{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    justify-content: center;
+    color: #000;
+    font-family: lato sans-serif;
+    padding: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: #d6a4a4;  
+  
+    h1, h3{
+      text-align: center;
+    }
+  }
+  
+  .container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+    gap: 1.6rem;
+  }
+  
+  
+  button{
+    display: flex;
+    gap: 1rem;
+    border: none
+  }
+  
+  .button a{
+    text-decoration: none;
+    color: #000;
+    padding: 1rem;
+    border-radius: 10px;
+    
+  }
+  .button a:hover{
+    text-decoration: none;
+    color: #ffdd57;
+  }
